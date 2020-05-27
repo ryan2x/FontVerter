@@ -178,6 +178,10 @@ public class EotHeader {
         // since our annotation deserializer has to have the propertys as Byte objects instead of
         // byte primative we have to do a wierd little dance to read our strings
         byte[] fullName = Bytes.toArray(Arrays.asList(data));
+//        byte[] fullName = new byte[data.length];
+//        for (int i=0;i<data.length;++i) {
+//            fullName[i] = data[i];
+//        }
         try {
             return new String(fullName, "UTF-16");
         } catch (UnsupportedEncodingException e) {

@@ -6,7 +6,7 @@
 
     <groupId>net.mabboud.fontverter</groupId>
     <artifactId>FontVerter</artifactId>
-    <version>1.2.22</version>
+    <version>1.2.23-SNAPSHOT</version>
     <name>FontVerter</name>
     <description>Library for converting various font formats.</description>
     <url>https://github.com/m-abboud/FontVerter</url>
@@ -45,10 +45,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.3</version>
+                <version>3.7.0</version>
                 <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
 
@@ -95,9 +95,14 @@
             <version>2.4</version>
         </dependency>
         <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>23.0</version>
+        </dependency>
+        <dependency>
             <groupId>org.reflections</groupId>
             <artifactId>reflections</artifactId>
-            <version>0.9.9</version>
+            <version>0.9.12</version>
         </dependency>
         <!--jbrotli is for woff2 generation and is not on central repo so dependency currently set to optional-->
         <dependency>
